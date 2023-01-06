@@ -1,5 +1,6 @@
 --- 
 layout: default
+banner_image: /images/plant.jpg
 team: 
 - name: Greg
   bio: Big Boss Coder
@@ -13,14 +14,19 @@ team:
   bio: Designer/part time model
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, itaque illum. Nulla quia optio doloribus quas, suscipit voluptates, illo doloremque odio velit repudiandae provident. 
   profile_image: /images/profile-2.jpg
+about-video-id: CLeZyIID9Bo
 ---
+
+<!--- Meet our growing family -->
 <section class=" tall-60 grid bg-green">
     <div class="col-5-middle padded">
         <h2> Meet our growing family </h2>   
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
     </div>
-    <div class="col-7 bg-image bg-plant"></div>
+    <div class="col-7 bg-image bg-plant" style="background-image: url('{{page.banner_image}}');"></div>
 </section> 
+
+<!--- The Team / Profil Pictures  -->
 
 <section class="padded"> 
   <div class="capped-width">
@@ -44,5 +50,15 @@ team:
         {% endfor %}
       </div>
 
+</section>
+
+<!-- Video -->
+<section class="padded bg-green center">
+  <h2 class="editable"> Watch our corny meet the team video </h2>
+  <p class="emphasis editable"> Featured j-bomb the terrier </p>
+
+  <div class="padded-1"> 
+ <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{page.about-video-id}}' frameborder='0' allowfullscreen></iframe></div>
+</div>
 </section>
 

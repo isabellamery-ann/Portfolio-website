@@ -130,6 +130,11 @@ a:hover { color: #a2745c; }
     font-size: 0.9rem;
 }
 
+.emphasis {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 
 /* Header & Footer  */
 header {
@@ -175,6 +180,25 @@ footer a:hover {
     background-image: url('/images/mockup.jpg');
 }
 
+
+/* Responsive video */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* SM - max-width in pixels approximately 768px */
 @media(max-width: 48em) {
