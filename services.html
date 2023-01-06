@@ -1,5 +1,75 @@
 --- 
 layout: default
+banner-usp: 
+- title: Design.
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus voluptas, eveniet sint natus perspiciatis voluptatibus quae, repudiandae laboriosam, provident deserunt dolorum expedita obcaecati sunt ut incidunt soluta quia amet.
+- title: Build.
+  description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nihil quasi at! Nihil architecto impedit iure blanditiis modi odit iste excepturi, illum, veritatis libero aspernatur maxime reiciendis minima! Iusto, iste?
+- title: Design & Build.
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus rem modi deleniti ex voluptatibus quo, suscipit magnam deserunt eius, nam vel odio dolorum, quaerat minus. Aspernatur modi est vel eius?
+features: 
+- title: Beautiful Designs
+  description: We specialise in start-up web development that starts small but can scale as your business scales. Using the latest in static site custom code, we make things easy for you, so its one less thing to think about ehen buildng. 
+  featured_image: /images/placeholder-project.png
+- title: Optimized Builds 
+  description: We specialise in start-up web development that starts small but can scale as your business scales. Using the latest in static site custom code, we make things easy for you, so its one less thing to think about ehen buildng. 
+  featured_image: /images/placeholder-project.png
 ---
 
-<section> SERVICES </section>
+<!-- Banner section -->
+<section class="bg-image bg-plant-2 padded tall-70 grid-middle-right">
+    <div class="col-6_sm-10 editable right">
+        <h2> Our Services </h2>   
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
+    </div>
+</section> 
+
+
+<section class="padded bg-green">
+    
+{% for item in page.banner-usp %}
+    <div class="capped-width grid">
+    <div class="col-4_sm-12 padded-2">
+        
+        <h3> {{item.title}} </h3> 
+        <p class="light-text"> {{item.description}}</p>
+        <p class="light-text"> {{item.description}}</p>
+
+    </div>
+    
+    {% endfor %}
+
+    <div class="col-12 center padded-2">
+        <a href="/contact.html" class="button" target="_blank"> Get in touch! </a> 
+    </div>
+    </div>
+
+   
+</section>
+
+<section> 
+
+    {% include newsletter-signup.html %}
+    
+    </section>
+
+<section class="capped-width ">
+    {% for item in page.features %}
+
+    <div class="grid flex-flip-alternate">
+
+        <div class="col-5_sm-12-middle padded">
+            <h3> {{item.title}} </h3>
+            <p> {{item.description}}</p>
+            <a href=" {{project.live-url}}" class="button" target="_blank"> Go to site </a>
+        </div>
+        
+        <div class="col-7_sm-12-middle padded">
+            <img src="{{item.featured_image}}" alt=" {{item.title }}">    
+        </div>
+    </div>
+    
+      {% endfor %}  
+    
+</section> 
+

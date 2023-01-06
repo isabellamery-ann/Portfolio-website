@@ -22,6 +22,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.logo {
+    text-decoration: none;
+}
+
 
 /* Utility Classes */
 .tall-50 { min-height: 50vh; }
@@ -42,6 +46,8 @@ html {
 .padded-0 { padding: 0; }
 .padded-b-0 { padding-bottom: 0; }
 .margin-b-0 { margin-bottom: 0; }
+.margin-b-1 {margin-bottom: 1rem;}
+.margin-b-2 {margin-bottom: 2rem;}
 
 .bg-rust  { background-color: #d3b4a2; }
 .bg-green { background-color: #9b9b81; }
@@ -164,6 +170,11 @@ footer a:hover {
 .profile-image {
     border-radius: 100%; ;
 }
+
+.landscape {
+    padding-bottom: 60%;
+}
+
 .bg-plant {
     background-image: url('/images/plant.jpg');
     background-position: 50% 43%;
@@ -180,6 +191,11 @@ footer a:hover {
     background-image: url('/images/mockup.jpg');
 }
 
+.right-arrow {
+    max-width: 2rem;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
 
 /* Responsive video */
 .embed-container {
@@ -199,6 +215,75 @@ footer a:hover {
     width: 100%;
     height: 100%;
 }
+
+
+/* Contact form styles */
+
+form {
+    padding: 1% 5%;
+    font-family: 'Lato';
+    color: rgb(90, 90, 95); 
+  }
+  
+  form input, 
+  form textarea {
+    width: 100%;
+    margin: 0.5rem 0; 
+    padding: 0.5rem; 
+    border: 2px solid #a2745c;
+    outline: none; /* fjerner highlighting af felterne når man hover over*/
+    font-family: inherit; /* tekst i felterne vil være en anden font by default - vi overrider den her med inherit*/
+    font-size: 0.9rem; 
+  }
+  
+  form input:focus, form textarea:focus { 
+    border-color: #9b9b81;
+  }
+  
+  textarea { 
+  min-height: 4rem; }
+  
+  form label {
+    display: block; 
+    margin-top: 1rem;
+    color: #a2745c;
+    font-weight: bold; 
+  }
+  
+
+  
+  
+  .form-style-two input, .form-style-two textarea {
+    border: 2px solid #ffc8dd; 
+    background-color: #D5BDAF;
+  }
+  
+  .form-style-two label { 
+  color: #D6CCC2;
+  text-transform: uppercase; 
+  letter-spacing 0.05em;
+  }
+  
+  .form-style-two button {
+    border: 2px solid #e4d6ec;
+    background-color: white; 
+    color:#e4d6ec; 
+    font-weight: bold; 
+    letter-spacing: 0.05em; 
+  }
+
+  form .button {
+    border: 2px solid #a2745c;
+    background-color: white;
+    color: #a2745c;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    
+  
+}
+
+
 
 /* SM - max-width in pixels approximately 768px */
 @media(max-width: 48em) {
