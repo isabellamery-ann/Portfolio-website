@@ -54,6 +54,22 @@ html {
 .right  { text-align: right; }
 
 
+/* capped-width er til at gøre de runde profilbilleder mindre */
+.capped-width {
+    max-width: 1000px;
+    margin: auto;
+}
+.capped-width-narrow {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Flip / change the order of the grids */
+.flex-flip-alternate:nth-child(even) {
+   flex-direction: row-reverse; 
+}
+
+
 /* Typography */
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -140,7 +156,9 @@ footer a:hover {
     background-repeat: no-repeat;
     background-image: url('/images/plant.jpg');
 }
-
+.profile-image {
+    border-radius: 100%; ;
+}
 .bg-plant {
     background-image: url('/images/plant.jpg');
     background-position: 50% 43%;
