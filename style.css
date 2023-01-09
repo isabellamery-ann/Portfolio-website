@@ -176,19 +176,19 @@ footer a:hover {
 }
 
 .bg-plant {
-    background-image: url('/images/plant.jpg');
+    background-image: url('/Images/plant.jpg');
     background-position: 50% 43%;
 }
 
 .bg-plant-2 {
-    background-image: url('/images/plant-2.jpg');
+    background-image: url('/Images/plant-2.jpg');
     background-position: 75% 50%;
 }
 .bg-meeting {
-    background-image: url('/images/meeting.jpg');
+    background-image: url('/Images/meeting.jpg');
 }
 .bg-mockup {
-    background-image: url('/images/mockup.jpg');
+    background-image: url('/Images/mockup.jpg');
 }
 
 .right-arrow {
@@ -295,11 +295,11 @@ form {
     .flex-flip-sm { flex-direction: column-reverse; }
 
     .bg-plant {
-        background-image: url('/images/plant-light.png');
+        background-image: url('/Images/plant-light.png');
     }
     
     .bg-plant-2 {
-        background-image: url('/images/plant-2-light.png');
+        background-image: url('/Images/plant-2-light.png');
         background-position: 45% 50%;
     }
 }
